@@ -3,41 +3,157 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>Flipkart Home Page</title>
     </head>
     <body>
         <nav>
-            <img src="flipkart-explore-plus.png" alt="Flipkart logo">
-            <input type="text" class="search" placeholder="Search for products,brands and more"> 
-            <button type="button" value="Login" class="login-button">Login</button>
-            <div class="dropdown">
-                <div class="btn">
-                    <button type="button" class="bt">More</button>
-                    <div class="b">
-                        <a href="#">Mens</a>
-                        <a href="#">Womens</a>
-                        <a href="#">Childeren</a>
-                    </div>
+            <div class="nav-container-1">
+                <img src="images/flipkart-explore-plus.jpg" alt="Flipkart logo" style="height:47px;padding: 7px;">
+                <div style="display: flex;">
+                    <input type="text" class="search" placeholder="Search for products,brands and more">
+                    <img src="images/search.png" style="height:40px;margin-top: 10px;">
                 </div>
             </div>
-            <div>
-            <img src="icon.png" alt="cart icon" class="cimg">
-            <button type="button" class="cart">Cart</button>
+            <div style="flex-direction: column;">
+                <button type="button" value="Login" class="login-button">Login</button>
+                <select class="more-button">
+                    <option selected>More</option>
+                    <option>Opt 1</option>
+                </select>
+                    <img src="images/icon.png" alt="cart icon" class="cimg">
+                    <button type="button" class="cart">Cart</button>
             </div>
         </nav>
+        
+        <section> 
+            <div class="nav-container-2">
+                <div class="bd"><img src="images/soffer.png" alt="Top offer img"><p>Top Offers</p></div>
+                <div class="bd"><img src="images/grocery.png" alt="Grocery img"><p>Grocery</p></div>
+                <div class="bd"><img src="images/mobile.png" alt="Mobile img"><p>Mobiles</p></div>
+                <div class="bd"><img src="images/fashion.png" alt="Fashion img"><select class="item-button">
+                    <option selected>Fashion</option>
+                    <option>Men</option><option>Women</option><option>Children</option>
+                </select></div>
+                <div class="bd"><img src="images/electronics.png" alt="Electronic img"><select class="item-button">
+                    <option selected>Electronics</option>
+                    <option>Mobile</option><option>Laptop</option><option>Headphones</option>
+                </select></div>
+                <div class="bd"><img src="images/home.png" alt="Home img"><select class="item-button">
+                    <option selected>Home</option>
+                    <option>Mobile</option><option>Laptop</option><option>Headphones</option>
+                </select></div>
+                <div class="bd"><img src="images/appliances.png" alt="appliances img"><select class="item-button">
+                    <option selected>Appliances</option>
+                    <option>Mobile</option><option>Laptop</option><option>Headphones</option>
+                </select></div>
+                <div class="bd"><img src="images/travel.png" alt="Travel img"><p>Travel</p></div>
+                <div class="bd"><img src="images/beauty.png" alt="Beauty img"><select class="item-button">
+                    <option selected>Beauty,Toys&More</option>
+                    <option>Mobile</option><option>Laptop</option><option>Headphones</option>
+                </select></div>
+            </div>
+        </section>
 
-        <div class="items">
-            <div class="bd">Item1</div>
-            <div class="bd">Item2</div>
-            <div class="bd">Item3</div>
-            <div class="bd">Item4</div>
-            <div class="bd">Item5</div>
-            <div class="bd">Item6</div>
-            <div class="bd">Item7</div>
-            <div class="bd">Item8</div>
-            <div class="bd">Item9</div>
-        </div>
+        <section id="nav-container-3">
+                <div id="product-container">
+                    <div class="deals">
+                        <div id="header-2" style="height:40px;">
+                            <h3>Deals of the Day <img src="images/watch.png" alt="timing" style="display: inline; height: 40px;"><span style="color: gray;">22 : 07 : 36 left</span></h3>
+                            <button type="button" style="background-color:  rgb(30, 110, 230); color:white;border:none; height: 40px; width:80px; margin:10px; border-radius: 2px;">View All</button>
+                        </div>
+                        <div id="left-side">
+                            <div>
+                                <div><img src="images/watch2.png" style="height: 200px; width:200px; margin: 10px;" ></div>
+                                <p style="text-align: center;">Description</p>
+                                <p style="text-align: center;">Description</p>
+                                <p style="text-align: center;">Description</p>
+                            </div>
+                            <div>
+                                <div style="background-color: aqua; height: 200px; width:200px; margin: 10px;" ></div>
+                                <p>Description</p>
+                                <p>Description</p>
+                                <p>Description</p>
+                            </div>
+                            <div>
+                                <div style="background-color: aqua; height: 200px; width:200px; margin: 10px;" ></div>
+                                <p>Description</p>
+                                <p>Description</p>
+                                <p>Description</p>
+                            </div>
+                            <div>
+                                <div style="background-color: aqua; height: 200px; width:200px; margin: 10px;" ></div>
+                                <p>Description</p>
+                                <p>Description</p>
+                                <p>Description</p>
+                            </div>
+                            <div>
+                                <div style="background-color: aqua; height: 200px; width:200px; margin: 10px;" ></div>
+                                <p>Description</p>
+                                <p>Description</p>
+                                <p>Description</p>
+                            </div>
+                            <div>
+                                <div style="background-color: aqua; height: 200px; width:200px; margin: 10px;" ></div>
+                                <p>Description</p>
+                                <p>Description</p>
+                                <p>Description</p>
+                            </div>
+                    </div>
+                </div>
+                    <div class="right-side">
+                        <div>
+                            <div style="background-color: aqua; height: 300px; width:190px; margin: 10px;" ></div>
+                            <p>Add</p>
+                        </div>
+                    </div>
+                    </div>
+                
+        
+            <div class="book-music">
+                <div id="header-3" style="height:40px;">
+                    <h5>Books And Music Instruments <span img src="" alt="timing" style="display: inline;"></h5>
+                    <button type="button" style="background-color:  rgb(30, 110, 230); color:white;border:none; height: 40px; width:80px; border-radius: 2px;">View All</button>                </div>
+                    <div id="side">
+                        <div>
+                            <div style="background-color: aqua; height: 200px; width:200px; margin: 10px;" ></div>
+                            <p>Description</p>
+                            <p>Description</p>
+                            <p>Description</p>
+                        </div>
+                            <div>
+                            <div style="background-color: aqua; height: 200px; width:200px; margin: 10px;" ></div>
+                            <p>Description</p>
+                            <p>Description</p>
+                            <p>Description</p>
+                        </div>
+                        <div>
+                            <div style="background-color: aqua; height: 200px; width:200px; margin: 10px;" ></div>
+                            <p>Description</p>
+                            <p>Description</p>
+                            <p>Description</p>
+                        </div>
+                        <div>
+                            <div style="background-color: aqua; height: 200px; width:200px; margin: 10px;" ></div>
+                            <p>Description</p>
+                            <p>Description</p>
+                            <p>Description</p>
+                        </div>
+                        <div>
+                            <div style="background-color: aqua; height: 200px; width:200px; margin: 10px;" ></div>
+                            <p>Description</p>
+                            <p>Description</p>
+                            <p>Description</p>
+                        </div>
+                        <div>
+                            <div style="background-color: aqua; height: 200px; width:200px; margin: 10px;" ></div>
+                            <p>Description</p>
+                            <p>Description</p>
+                            <p>Description</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
     </body>
-
 </html>

@@ -1,82 +1,206 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 nav{
     background-color: rgb(30, 110, 230);
     display: flex;
     width:auto;
-    height:60px;
+    height:auto;
     margin:0;
     position: relative;
     flex-wrap: wrap;
+    justify-content: space-around;
+    padding:10px;
 }
 
-img{
-    margin-left:250px;
-    height: 50px;
-    margin-top:7px ;
+.nav-container-1{
+    display: flex;
+    height:60px;
+    box-sizing: border-box;
+    margin: 0%;
+    border:none;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
+
+
 .cimg{
-    height:30px;
-    margin-top: 5px;
-    margin-left:20px;
-    padding: 0%;
+    height:20px;
+    margin-top: 6px;
+    margin-left:15px;
+    margin-right: 2px;
+    justify-items: center;
 }
 
 .search{
-    margin:10px;
-    width:500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width:300px;
     font-size: medium;
+    border:none;
+    height: 40px;
+}
+.search:focus{
+    outline:none;
 }
 
 .login-button{
-    width:120px;
-    margin-top:10px;
-    margin-left:150px;
+    margin-bottom: 10px;
+    padding: auto;
+    width: 90px;
     height:40px;
     font-size: medium;
     color:rgb(30, 110, 230);
-}
-
-.bt{
-    background-color: rgb(30, 110, 230);
-    color:white;
-    width:90px;
-    margin-top:10px;
-    margin-left:20px;
-    margin-right: 5px;
-    height:40px;
-    font-size: 20px;
+    margin-right: 10px;
     border:none;
-}
-.b{
-    display:none;
+    font-weight: bold;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
+.more-button{
+    background-color:rgb(30, 110, 230);
+    margin-bottom: 10px;
+    padding: auto;
+    width:auto;
+    height:40px;
+    font-size: medium;
+    color:white;
+    border:none;
+    font-size: 20px;
+}
 .cart{
     background-color: rgb(30, 110, 230);
     color:white;
-    width:90px;
+    width:50px;
     margin-top:10px;
     height:40px;
     font-size: 20px;
     border:none;
 }
 
-.items{
+.nav-container-2{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin:auto;
     height:auto;
-    padding: 10px;;
-    border: 1px solid black;
+    padding: 10px;
+    width:80%;
+}
+.bd{
+    width: 100px;
+    height: 100px;
+    justify-items: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border:none;
+
 }
 
-.bd{
-    display: flex;
+.bd img{
+    display:flex;
     flex-direction: row;
-    border: 1px solid black;
-    width:auto;
-    margin:auto;
-    height:auto;
-    padding:45px;
+    width: 70px;
+    margin:5px;
+    height:70px;
     align-self: center;
+    flex-wrap: wrap;
 }
+
+.item-button{
+    background-color: white;
+    border:none;
+    margin: 10px;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.item-button:focus{
+    outline:none;
+}
+
+#nav-container-3{
+    background-color: rgb(240, 240, 240);
+}
+
+#product-container{
+    display: grid;
+    grid-template-areas: 
+    "deals header-2" 
+    "left-side right-side";
+    grid-template-columns: 7fr 1fr;
+    width:90%;
+    margin: auto;
+    gap:10px;
+}
+@media (max-width:1024){
+    #product-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.deals{
+    grid-area: deals;
+}
+#header-2{
+    display: flex;
+    background-color: white;
+    width: auto;
+    height:20px;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+#left-side{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+#left-side{
+    grid-area: left-side;
+}
+.right-side{
+    grid-area:header-2;
+}
+
+.book-music{
+    display: grid;
+    grid-template-areas: 
+    "header-3 header-3" 
+    "side side";
+    grid-template-columns: 7fr;
+    width:100%;
+    gap:3px;
+}
+@media (max-width:1024){
+    #book-music{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#header-3{
+    display: flex;
+    background-color: white;
+    width: 90%;
+    height:20px;
+    margin-left: 90px;
+    justify-content: space-between;
+}
+#header-3{
+    grid-area: header-3;
+}
+
+#side{
+    display: flex;
+    background-color: white;
+    width:90%;
+    justify-self: center;
+}
+#side{
+    grid-area:side;
+}
+
