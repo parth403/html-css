@@ -21,7 +21,7 @@ nav{
     margin: 0%;
     border:none;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 
@@ -134,9 +134,9 @@ nav{
     grid-template-columns: 7fr 1fr;
     width:90%;
     margin: auto;
-    gap:10px;
+    gap:5px;
 }
-@media (max-width:1024){
+@media screen and (max-width:1024){
     #product-container{
         display: flex;
         flex-direction: column;
@@ -151,7 +151,7 @@ nav{
     background-color: white;
     width: auto;
     height:20px;
-    margin-top: 15px;
+    margin-top: 10px;
     justify-content: space-between;
 }
 #left-side{
@@ -166,41 +166,21 @@ nav{
     grid-area:header-2;
 }
 
-.book-music{
+#pro-container{
     display: grid;
     grid-template-areas: 
-    "header-3 header-3" 
-    "side side";
+    "deals header-2" 
+    "left-side right-side";
     grid-template-columns: 7fr;
-    width:100%;
-    gap:3px;
+    width:90%;
+    margin: auto;
+    gap:5px;
+    justify-content: space-evenly;
 }
-@media (max-width:1024){
-    #book-music{
+@media screen and (max-width:1024){
+    #pro-container{
         display: flex;
         flex-direction: column;
     }
-}
-
-#header-3{
-    display: flex;
-    background-color: white;
-    width: 90%;
-    height:20px;
-    margin-left: 90px;
-    justify-content: space-between;
-}
-#header-3{
-    grid-area: header-3;
-}
-
-#side{
-    display: flex;
-    background-color: white;
-    width:90%;
-    justify-self: center;
-}
-#side{
-    grid-area:side;
 }
 
